@@ -8,8 +8,8 @@ Maintainer: GODLIKE5
 Section: Tweaks
 Depends: mobilesubstrate
 Filename: package/ScarletNotifier/Notifier.deb
-Size: 1062374
-MD5sum: c09f87d5175b88482c1e0cb68be451e9
-SHA1: b23c618cc94f99727ae8dbbdc0a0bedc61e10ca5
-SHA256: c0aac5623346f6d16b3299be43e44a20e56339123a9cda1cc81b2741539f93cc
+Size: 24480
+MD5sum: 6cb693ce88b3637021cf4ff72e2ecad2
+SHA1: 18783b6bb9cf37554c462b337606a5ae00864f97
+SHA256: 0005ac1b2adc15d17d8adaf7da2763ae6fb027c93d8674a0d80be05ba356a0fd
 Depiction: https://godlike5.github.io/depiction/?ScarletNotifier
