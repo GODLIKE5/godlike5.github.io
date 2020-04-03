@@ -1,0 +1,46 @@
+<tweak>
+
+<tweakName>
+Scarlet Notifier
+</tweakName>
+<tweakShortDescription>
+A Notification Fixer-Upper.
+</tweakShortDescription>
+<tweakDescription>
+Say hello to push notifications!
+</tweakDescription>
+
+<tweakSize>
+24 KB
+</tweakSize>
+<tweakCategory>
+Tweaks
+</tweakCategory>
+<tweakCompatibility>
+iOS 13
+</tweakCompatibility>
+<tweakVersion>
+0.1.2
+</tweakVersion>
+<tweakUpdateDate>
+04/02/20
+</tweakUpdateDate>
+
+<tweakDeveloper>
+GODLIKE5
+</tweakDeveloper>
+<tweakDevTwitter>
+@GODLIKE5_
+</tweakDevTwitter>
+<tweakDevTwitterPic>
+https://pbs.twimg.com/profile_images/1242904610785935360/MXUnnXMI_400x400.jpg
+</tweakDevTwitterPic>
+<tweakDevTwitterURL>
+https://twitter.com/GODLIKE5_
+</tweakDevTwitterURL>
+
+<tweakChangelog>
+• initial release
+</tweakChangelog>
+
+</tweak>

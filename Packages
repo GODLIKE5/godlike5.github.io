@@ -1,0 +1,11 @@
+Package: com.godlike5.scarlet
+Name: ScarletNotifier
+Version: 0.1.2
+Architecture: iphoneos-arm
+Description: Fix Push Notifications on iCloud Bypassed Devices.
+Author: GODLIKE5
+Maintainer: GODLIKE5
+Section: Tweaks
+Depiction: https://godlike5.github.io/depiction/?ScarletNotifier
+Size: 24000
+Filename: package/ScarletNotifier/Notifier.deb
