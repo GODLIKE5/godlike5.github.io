@@ -1,0 +1,47 @@
+<tweak>
+
+<tweakName>
+Voltik
+</tweakName>
+<tweakShortDescription>
+An awesome battery usage tweak.
+</tweakShortDescription>
+Haptic feedback when battery percent changes. This allows one to know that at what rate an application is consuming the battery. This will allow one to realise when to stop using his/her iPhone and when his/her iPhone is charging at a good pace. As it is my first iOS tweak and I’ll appreciate any sort of feedback or suggestions from the community.
+<tweakDescription>
+.
+</tweakDescription>
+
+<tweakSize>
+28 KB
+</tweakSize>
+<tweakCategory>
+Tweaks
+</tweakCategory>
+<tweakCompatibility>
+iOS 13
+</tweakCompatibility>
+<tweakVersion>
+1.0
+</tweakVersion>
+<tweakUpdateDate>
+04/02/20
+</tweakUpdateDate>
+
+<tweakDeveloper>
+Agamjot Singh
+</tweakDeveloper>
+<tweakDevTwitter>
+@devAgamjot
+</tweakDevTwitter>
+<tweakDevTwitterPic>
+https://pbs.twimg.com/profile_images/1242507376420364288/zbJPXzAI_400x400.jpg
+</tweakDevTwitterPic>
+<tweakDevTwitterURL>
+https://twitter.com/devAgamjot
+</tweakDevTwitterURL>
+
+<tweakChangelog>
+• initial release
+</tweakChangelog>
+
+</tweak>
