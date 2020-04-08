@@ -20,7 +20,7 @@
 
 html {
   --box-color: black;
-  --nav-color: black;
+  --nav-color: transparent;
   --text-color: gold;
   --light-text-color: gold;
 }
