@@ -45,6 +45,7 @@
       --navbar-bg: #343a40;
       --footer-bg: #6c757d;
       --font-family: 'Poppins', sans-serif;
+      --card-bg: #ffffff; /* default card background for light mode */
     }
     /* Dark mode variables */
     body.dark-mode {
@@ -53,6 +54,11 @@
       --navbar-bg: #1f1f1f;
       --footer-bg: #1f1f1f;
       --hero-overlay: rgba(0,0,0,0.6);
+      --card-bg: #1e1e1e; /* card background for dark mode */
+    }
+    /* Override bg-light classes in dark mode */
+    body.dark-mode .bg-light {
+      background-color: var(--card-bg) !important;
     }
     /* Global Styles */
     body {
@@ -128,8 +134,7 @@
     }
     /* Services Section */
     #services .service-card {
-      border: none;
-      background: var(--bg-color);
+      background: var(--card-bg);
       transition: transform 0.3s ease;
       text-align: center;
       padding: 30px 20px;
@@ -145,8 +150,27 @@
       color: var(--primary-color);
       margin-bottom: 1rem;
     }
+    /* Process Section */
+    #process .process-card {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      background: var(--card-bg);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    #process .process-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    #process i {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
     /* Projects Section */
     #projects .project-card {
+      background: var(--card-bg);
       border: none;
       border-radius: 8px;
       overflow: hidden;
@@ -160,18 +184,22 @@
       height: 200px;
       object-fit: cover;
     }
+    /* Ensure project card text remains legible in dark mode */
+    .project-card .card-body {
+      background: var(--card-bg);
+      color: var(--text-color);
+    }
     .btn-portfolio {
       background-color: var(--primary-color);
       border: none;
+      color: #fff !important;
     }
     .btn-portfolio:hover {
       background-color: #0069d9;
     }
-    .btn-portfolio {
-    color: white !important;
-}
     /* Testimonials Section */
     #testimonials .carousel-item {
+      background: var(--card-bg);
       text-align: center;
       padding: 40px;
     }
@@ -249,6 +277,7 @@
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -267,7 +296,7 @@
   <section class="hero d-flex flex-column justify-content-center">
     <div class="container" data-aos="fade-up">
       <h1>Innovative IT Specialist & Designer</h1>
-<p>Turning complex challenges into seamless, high-performance digital experiences.</p>
+      <p>Turning complex challenges into seamless, high-performance digital experiences.</p>
     </div>
   </section>
 
@@ -278,17 +307,11 @@
       <div class="row justify-content-center">
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
           <p class="lead">
-            I'm <strong>David Alexander Ventura</strong>, a 23-year-old IT Specialist, Full-Stack Developer, and Designer with over 5 years of experience. My passion for technology began in early middle school, where I started modding games and experimenting with code. What started as simple modifications soon turned into a deep fascination with building, automating, and optimizing digital solutions.
-        </p>
-        <p>
-            With expertise in full-stack development, AI-driven automation, and intuitive UI/UX design, I specialize in creating high-performance, scalable, and efficient systems. My skill set extends from backend infrastructure and API integrations to front-end development and intelligent automation.
-        </p>
-        <p>
-            I’m always eager to take on new challenges and collaborate with forward-thinking teams to build innovative, impactful solutions. If you're looking for a skilled developer with a strong problem-solving mindset, let's connect.
-        </p>
-        <p>
-            Explore my portfolio to see how I bring ideas to life through technology.
-        </p>        
+            I'm <strong>David Alexander Ventura</strong>, a 23-year-old IT Specialist, Full-Stack Developer, and Designer with over 5 years of experience. My passion for technology began in early middle school when I started modding games and experimenting with code. What began as simple modifications evolved into a deep fascination with building, automating, and optimizing digital solutions.
+          </p>
+          <p>
+            With expertise spanning full-stack development, AI-driven automation, and intuitive UI/UX design, I create high-performance, scalable systems. I'm always eager to embrace new challenges and collaborate with forward-thinking teams. Explore my portfolio to see how I transform ideas into impactful digital experiences.
+          </p>
         </div>
       </div>
     </div>
@@ -324,6 +347,43 @@
     </div>
   </section>
 
+  <!-- Process Section -->
+  <section id="process">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">My Process</h2>
+      <div class="row g-4">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="process-card">
+            <i class="fas fa-search"></i>
+            <h5 class="mt-3">Discover</h5>
+            <p>Research and gather insights to define project goals and requirements.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="process-card">
+            <i class="fas fa-pencil-ruler"></i>
+            <h5 class="mt-3">Design</h5>
+            <p>Create wireframes and prototypes, ensuring intuitive UI/UX.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="process-card">
+            <i class="fas fa-code"></i>
+            <h5 class="mt-3">Develop</h5>
+            <p>Transform designs into robust, scalable digital solutions.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="process-card">
+            <i class="fas fa-rocket"></i>
+            <h5 class="mt-3">Deploy</h5>
+            <p>Launch and optimize, ensuring seamless performance and maintenance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects">
     <div class="container">
@@ -334,7 +394,7 @@
             <img src="https://static.vecteezy.com/system/resources/previews/010/591/051/non_2x/taxi-ordering-service-app-concept-girl-booking-yellow-cab-woman-with-smartphone-order-car-transfer-online-route-and-arrival-address-on-city-map-on-mobile-screen-web-application-get-taxicab-vector.jpg" class="card-img-top" alt="El Amigo App">
             <div class="card-body">
               <h5 class="card-title">El Amigo – SMS-Based Ride-Booking</h5>
-              <p class="card-text">Developed a ride-booking platform where riders can request trips via SMS — no app needed. Drivers use an iOS app for ride management, with real-time GPS tracking and automated SMS updates. Android version in development..</p>
+              <p class="card-text">Developed a platform enabling riders to request trips via SMS. Drivers manage rides through an iOS app with real-time GPS tracking and automated SMS updates. Android version in development.</p>
             </div>
           </div>
         </div>
@@ -342,8 +402,8 @@
           <div class="card project-card">
             <img src="https://media.licdn.com/dms/image/v2/D4D12AQHsQaiBCSSGWQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1686007282617?e=2147483647&v=beta&t=dKdMzBUb870bX742tMSunZH9I6TLaB5WTkWkwgLKN6o" class="card-img-top" alt="Telegram E-Commerce Bot">
             <div class="card-body">
-              <h5 class="card-title">E-Commerce Telegram Bot with Automated Order Processing</h5>
-              <p class="card-text">Developed a Python-based Telegram bot that lets users browse and order items. The bot emails the seller with order details, images, and the total amount (cash on delivery), automating the purchase process.</p>
+              <h5 class="card-title">E-Commerce Telegram Bot</h5>
+              <p class="card-text">A Python-based Telegram bot enabling users to browse and order items. Orders are processed automatically with detailed notifications sent via email.</p>
             </div>
           </div>
         </div>
@@ -351,14 +411,14 @@
           <div class="card project-card">
             <img src="https://1000logos.net/wp-content/uploads/2017/05/Paypal-Logo-2022.png" class="card-img-top" alt="AI Shopping Cart">
             <div class="card-body">
-              <h5 class="card-title">AI-Powered Shopping Cart with PayPal IPN</h5>
-              <p class="card-text">Developed a smart checkout system using PayPal IPN, featuring unique key generation for secure transactions. Keys auto-expire after 24 hours, ensuring enhanced security and seamless payment processing.</p>
+              <h5 class="card-title">AI-Powered Shopping Cart</h5>
+              <p class="card-text">A smart checkout system using PayPal IPN with auto-expiring keys for enhanced security and seamless payment processing.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
-        <a href="https://godlike5.github.io" target="_blank" class="btn btn-lg btn-portfolio" >View Full Portfolio</a>
+        <a href="https://godlike5.github.io" target="_blank" class="btn btn-lg btn-portfolio">View Full Portfolio</a>
       </div>
     </div>
   </section>
