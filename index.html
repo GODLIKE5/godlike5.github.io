@@ -70,29 +70,16 @@
       margin: 0;
       padding: 0;
     }
-    h1, h2, h3, h4 {
-      font-weight: 700;
-    }
+    h1, h2, h3, h4 { font-weight: 700; }
     /* Navbar */
     .navbar {
       background-color: var(--navbar-bg) !important;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .navbar-brand {
-      font-size: 1.75rem;
-      font-weight: bold;
-    }
-    .nav-link {
-      transition: color 0.3s ease;
-    }
-    .nav-link:hover {
-      color: var(--primary-color);
-    }
-    #themeToggle {
-      border: none;
-      background: transparent;
-      outline: none;
-    }
+    .navbar-brand { font-size: 1.75rem; font-weight: bold; }
+    .nav-link { transition: color 0.3s ease; }
+    .nav-link:hover { color: var(--primary-color); }
+    #themeToggle { border: none; background: transparent; outline: none; }
     /* Hero Section */
     .hero {
       position: relative;
@@ -106,15 +93,8 @@
       background-position: center;
       color: #fff;
     }
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
-    }
-    .hero p {
-      font-size: 1.25rem;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-    }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.4); }
+    .hero p { font-size: 1.25rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.4); }
     /* Section Titles */
     .section-title {
       text-transform: uppercase;
@@ -124,14 +104,9 @@
       text-align: center;
       color: var(--primary-color);
     }
-    section {
-      padding: 60px 0;
-    }
+    section { padding: 60px 0; }
     /* About Section */
-    #about p.lead {
-      font-size: 1.125rem;
-      line-height: 1.6;
-    }
+    #about p.lead { font-size: 1.125rem; line-height: 1.6; }
     /* Services Section */
     #services .service-card {
       background: var(--card-bg);
@@ -145,11 +120,7 @@
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
-    #services i {
-      font-size: 3rem;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-    }
+    #services i { font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem; }
     /* Process Section */
     #process .process-card {
       text-align: center;
@@ -163,11 +134,7 @@
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
-    #process i {
-      font-size: 2.5rem;
-      color: var(--primary-color);
-      margin-bottom: 0.5rem;
-    }
+    #process i { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 0.5rem; }
     /* Projects Section */
     #projects .project-card {
       background: var(--card-bg);
@@ -180,36 +147,22 @@
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
-    #projects .project-card img {
-      height: 200px;
-      object-fit: cover;
-    }
-    /* Ensure project card text remains legible in dark mode */
-    .project-card .card-body {
-      background: var(--card-bg);
-      color: var(--text-color);
-    }
+    #projects .project-card img { height: 200px; object-fit: cover; }
+    .project-card .card-body { background: var(--card-bg); color: var(--text-color); }
     .btn-portfolio {
       background-color: var(--primary-color);
       border: none;
       color: #fff !important;
     }
-    .btn-portfolio:hover {
-      background-color: #0069d9;
-    }
+    .btn-portfolio:hover { background-color: #0069d9; }
     /* Testimonials Section */
     #testimonials .carousel-item {
       background: var(--card-bg);
       text-align: center;
       padding: 40px;
     }
-    #testimonials .testimonial-text {
-      font-style: italic;
-      margin-bottom: 20px;
-    }
-    #testimonials .testimonial-author {
-      font-weight: bold;
-    }
+    #testimonials .testimonial-text { font-style: italic; margin-bottom: 20px; }
+    #testimonials .testimonial-author { font-weight: bold; }
     /* Skills Section */
     #skills .skill-icon {
       font-size: 2.5rem;
@@ -217,9 +170,7 @@
       color: var(--primary-color);
       transition: transform 0.3s ease;
     }
-    #skills .skill-icon:hover {
-      transform: scale(1.1);
-    }
+    #skills .skill-icon:hover { transform: scale(1.1); }
     /* Contact Section (No Form) */
     #contact .contact-info {
       text-align: center;
@@ -231,9 +182,7 @@
       color: var(--primary-color);
       transition: color 0.3s ease;
     }
-    #contact .contact-info a:hover {
-      text-decoration: underline;
-    }
+    #contact .contact-info a:hover { text-decoration: underline; }
     /* Footer */
     footer {
       background-color: var(--footer-bg);
@@ -246,9 +195,7 @@
       margin: 0 0.5rem;
       transition: color 0.3s ease;
     }
-    footer a:hover {
-      color: var(--primary-color);
-    }
+    footer a:hover { color: var(--primary-color); }
     /* Back-to-Top Button */
     #backToTop {
       position: fixed;
@@ -262,6 +209,16 @@
       font-size: 18px;
       cursor: pointer;
       transition: opacity 0.3s ease;
+    }
+    /* Modal Customization for Dark/Light Mode */
+    .modal-content {
+      background: var(--card-bg);
+      color: var(--text-color);
+    }
+    .modal-header .btn-close { filter: invert(1); }
+    /* Fade effect for captcha challenge */
+    #captchaChallenge {
+      transition: opacity 0.5s ease;
     }
   </style>
 </head>
@@ -307,17 +264,14 @@
       <div class="row justify-content-center">
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
           <p class="lead">
-            I'm <strong>David Alexander Ventura</strong>, a 23-year-old IT Specialist, Full-Stack Developer, and Designer with over 5 years of experience. My journey into technology started in middle school, not through textbooks, but by modding games and reverse-engineering code. What began as a simple curiosity quickly evolved into a deep passion for building, automating, and optimizing digital solutions from the ground up.
-        </p>
-        <p>
-            Over the years, I’ve developed expertise in full-stack development, AI-driven automation, and intuitive UI/UX design, allowing me to craft scalable, high-performance systems that seamlessly blend functionality with user experience. I have hands-on experience with PHP, Python, JavaScript, MySQL, and HTML5, along with API integrations that power modern web applications. Whether it's developing responsive web interfaces, troubleshooting software, or optimizing workflows, I thrive on creating efficient, user-centric solutions that drive impact.
-        </p>
-        <p>
-            Beyond technical development, I bring strong communication and customer service skills, ensuring that the solutions I build align with user needs. As a bilingual (English & Spanish) professional, I excel in collaborating with diverse teams and clients to deliver seamless digital experiences.
-        </p>
-        <p>
-            I’m always seeking new opportunities to apply my expertise, collaborate with forward-thinking teams, and develop cutting-edge technology. Let’s connect—explore my portfolio and see how I transform ideas into reality.
-        </p>        
+            I'm <strong>David Alexander Ventura</strong>, a 23-year-old IT Specialist, Full-Stack Developer, and Designer with over 5 years of experience. My journey into technology started in middle school—not through textbooks, but by modding games and reverse-engineering code. That early curiosity quickly grew into a passion for building, automating, and optimizing digital solutions.
+          </p>
+          <p>
+            Over the years, I've honed my skills in full-stack development, AI-driven automation, and intuitive UI/UX design—crafting scalable, high-performance systems that truly engage users. Whether I'm developing responsive web interfaces, troubleshooting complex software, or optimizing workflows, I strive to create efficient, user-centric solutions that make an impact.
+          </p>
+          <p>
+            Always eager to tackle new challenges, I collaborate with forward-thinking teams to turn ideas into reality. Explore my portfolio and let's connect.
+          </p>
         </div>
       </div>
     </div>
@@ -503,7 +457,10 @@
       <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
       <div class="row">
         <div class="col-md-12 contact-info" data-aos="fade-up" data-aos-delay="100">
-          <p><i class="fas fa-phone"></i> <a href="tel:301-455-8288">301-455-8288</a></p>
+          <p>
+            <i class="fas fa-phone"></i> 
+            <span id="phoneReveal" style="cursor:pointer; text-decoration:underline;">Click to reveal phone number</span>
+          </p>
           <p><i class="fas fa-envelope"></i> <a href="mailto:fmelio1020@gmail.com">fmelio1020@gmail.com</a></p>
           <p>
             <i class="fab fa-github"></i> <a href="https://github.com/godlike5" target="_blank">github.com/godlike5</a> &nbsp; 
@@ -513,6 +470,28 @@
       </div>
     </div>
   </section>
+
+  <!-- Captcha Modal -->
+  <div class="modal fade" id="captchaModal" tabindex="-1" aria-labelledby="captchaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="captchaModalLabel">Verify to Reveal Phone Number</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Please solve the challenge below to reveal the phone number.</p>
+          <div id="captchaChallenge" class="mb-2 fw-bold"></div>
+          <input type="text" id="captchaAnswer" class="form-control" placeholder="Enter your answer">
+          <div id="captchaError" class="text-danger mt-2" style="display:none;">Incorrect answer. Please try again.</div>
+          <div id="captchaLockMessage" class="text-warning mt-2" style="display:none;"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="verifyCaptcha" class="btn btn-primary">Verify</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
@@ -559,6 +538,104 @@
     });
     backToTop.addEventListener('click', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Captcha functionality for revealing phone number with new captcha on failure
+    const phoneReveal = document.getElementById('phoneReveal');
+    const captchaModal = new bootstrap.Modal(document.getElementById('captchaModal'), {});
+    const captchaChallengeEl = document.getElementById('captchaChallenge');
+    const captchaAnswerInput = document.getElementById('captchaAnswer');
+    const captchaErrorEl = document.getElementById('captchaError');
+    const captchaLockMessageEl = document.getElementById('captchaLockMessage');
+    const verifyCaptchaButton = document.getElementById('verifyCaptcha');
+    let correctAnswer;
+    const MAX_ATTEMPTS = 3;
+    const LOCK_DURATION = 60 * 60 * 1000; // 1 hour in milliseconds
+
+    // Add fade transition to captcha challenge element
+    captchaChallengeEl.style.opacity = "1";
+
+    // Check if user is locked out
+    function checkLock() {
+      const lockTime = localStorage.getItem("captcha_lock");
+      if(lockTime) {
+        const now = Date.now();
+        if(now < parseInt(lockTime)) {
+          return true;
+        } else {
+          // Lock expired, reset attempts
+          localStorage.removeItem("captcha_lock");
+          localStorage.removeItem("captcha_attempts");
+          return false;
+        }
+      }
+      return false;
+    }
+
+    function generateCaptcha() {
+      // Fade out old challenge text
+      captchaChallengeEl.style.opacity = "0";
+      setTimeout(() => {
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
+        correctAnswer = num1 + num2;
+        captchaChallengeEl.innerText = "What is " + num1 + " + " + num2 + "?";
+        captchaChallengeEl.style.opacity = "1";
+        captchaAnswerInput.value = "";
+        captchaErrorEl.style.display = "none";
+        captchaLockMessageEl.style.display = "none";
+      }, 500);
+    }
+
+    phoneReveal.addEventListener("click", function() {
+      if (checkLock()) {
+        const lockUntil = new Date(parseInt(localStorage.getItem("captcha_lock")));
+        // Show only one combined lock message
+        captchaLockMessageEl.style.display = "block";
+        captchaLockMessageEl.innerText = "Too many failed attempts. Please wait until " + lockUntil.toLocaleTimeString() + " or contact via email.";
+        captchaChallengeEl.style.display = "none";
+        captchaAnswerInput.style.display = "none";
+        verifyCaptchaButton.disabled = true;
+        captchaModal.show();
+      } else {
+        captchaChallengeEl.style.display = "block";
+        captchaAnswerInput.style.display = "block";
+        verifyCaptchaButton.disabled = false;
+        generateCaptcha();
+        captchaModal.show();
+      }
+    });
+
+    verifyCaptchaButton.addEventListener("click", function() {
+      const answer = parseInt(captchaAnswerInput.value.trim());
+      if (answer === correctAnswer) {
+        captchaModal.hide();
+        phoneReveal.innerHTML = '<a href="tel:301-455-8288" style="color: var(--primary-color); text-decoration:underline;">301-455-8288</a>';
+        // Reset attempts on success
+        localStorage.removeItem("captcha_attempts");
+        localStorage.removeItem("captcha_lock");
+      } else {
+        captchaErrorEl.style.display = "block";
+        // Increment attempt counter in localStorage
+        let attempts = parseInt(localStorage.getItem("captcha_attempts")) || 0;
+        attempts++;
+        localStorage.setItem("captcha_attempts", attempts);
+        if(attempts >= MAX_ATTEMPTS) {
+          const lockUntil = Date.now() + LOCK_DURATION;
+          localStorage.setItem("captcha_lock", lockUntil);
+          // Show combined lock message
+          captchaLockMessageEl.style.display = "block";
+          captchaLockMessageEl.innerText = "Too many failed attempts. Please wait until " + new Date(lockUntil).toLocaleTimeString() + " or contact via email.";
+          captchaChallengeEl.style.display = "none";
+          captchaAnswerInput.style.display = "none";
+          verifyCaptchaButton.disabled = true;
+        } else {
+          // After a short delay, generate a new captcha challenge with fade animation
+          setTimeout(function() {
+            generateCaptcha();
+          }, 1500);
+        }
+      }
     });
   </script>
 </body>
