@@ -131,7 +131,7 @@
 "Keep your belongings secure and within your sight."
 "If you need to step away, inform the new person or take your belongings with you."
 "Be careful if the new person dominates the conversation and doesn't show interest in you."
-"Don't get into a vehicle with the new person if you feel unsafe."
+"Don't get into a vehicle with a new person if you feel unsafe."
 "Have cash or a way to pay for independent transportation if needed."
 "Share your live location with a trusted contact during the meeting."
 "Check the new person's online presence for consistency and red flags."
