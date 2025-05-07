@@ -1,14 +1,19 @@
 {
-    "test-session-123": {
-      "meetupTitle": "Simulated Meetup 1",
-      "locationName": "Spoofed Location A",
-      "strangerName": "Simulated User X",
-      "endTime": 1678886400,
-      "selectedContacts": [],
-      "checkInInterval": 20,
+    "ongoing-session-now": {
+      "meetupTitle": "Current Park Meetup",
+      "locationName": "Wheaton Regional Park",
+      "strangerName": "Jamie K.",
+      "endTime": 1683459600,
+      "selectedContacts": [
+        {
+          "name": "Dad",
+          "phoneNumber": "555-111-3333"
+        }
+      ],
+      "checkInInterval": 15,
       "meetupCoordinate": {
-        "latitude": 34.0522,
-        "longitude": -118.2437
+        "latitude": 39.0585,
+        "longitude": -77.0652
       }
     }
   }
