@@ -1,6 +1,14 @@
 {
-  "sessionToken": "test-session-123",
-  "name": "Test Guest User",
-  "latitude": 38.97,
-  "longitude": -77.01
-}
+    "test-session-123": {
+      "meetupTitle": "Simulated Meetup 1",
+      "locationName": "Spoofed Location A",
+      "strangerName": "Simulated User X",
+      "endTime": 1678886400,
+      "selectedContacts": [],
+      "checkInInterval": 20,
+      "meetupCoordinate": {
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      }
+    }
+  }
