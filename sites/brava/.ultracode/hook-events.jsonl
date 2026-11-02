@@ -1,0 +1,5 @@
+{"ts": "2026-11-02T22:00:56.082605+00:00", "event": "PostShell", "session_id": "", "prompt_id": "", "agent_id": "", "agent_type": ""}
+{"ts": "2026-11-02T22:00:56.088541+00:00", "event": "CwdChanged", "session_id": "f6baaa32-a462-455d-a46d-c017b4b7ae8c", "prompt_id": "3aa6624e-2d1f-4c21-86b5-8826ab4d4000", "agent_id": "", "agent_type": ""}
+{"ts": "2026-11-02T22:00:56.089497+00:00", "event": "PostShell", "session_id": "", "prompt_id": "", "agent_id": "", "agent_type": ""}
+{"ts": "2026-11-02T22:01:19.359095+00:00", "event": "PostShell", "session_id": "", "prompt_id": "", "agent_id": "", "agent_type": ""}
+{"ts": "2026-11-02T22:01:19.375761+00:00", "event": "PostShell", "session_id": "", "prompt_id": "", "agent_id": "", "agent_type": ""}
